@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="825.0" prefWidth="1539.0" style="-fx-background-color: #F6F6F6; -fx-border-radius: 30px;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ijse.gdse.controller.HomeFormController">
+   <children>
+      <VBox prefHeight="897.0" prefWidth="235.0" style="-fx-background-color: white;">
+         <children>
+            <VBox prefHeight="83.0" prefWidth="212.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <HBox prefHeight="83.0" prefWidth="78.0">
+                           <children>
+                              <ImageView fitHeight="79.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/system_image/company_logo.png" />
+                                 </image>
+                              </ImageView>
+                           </children></HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="83.0" prefWidth="130.0">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="123.0" text="MY PLUS" textFill="#544e4e">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="126.0" text="SOLUTION" textFill="#544e4e">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children></HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="809.0" prefWidth="228.0">
+               <children>
+                  <HBox prefHeight="29.0" prefWidth="228.0">
+                     <children>
+                        <Separator prefHeight="35.0" prefWidth="226.0">
+                           <HBox.margin>
+                              <Insets right="2.0" top="-14.0" />
+                           </HBox.margin>
+                        </Separator>
+                     </children></HBox>
+                  <HBox fx:id="mangeCustomerHBox" alignment="CENTER" prefHeight="46.0" prefWidth="212.0" style="-fx-background-color: #F6F6F6;">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="175.0" text="Manage Customer">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="21.0" right="-9.0" top="2.0" />
+                           </HBox.margin></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="212.0">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="175.0" text="Manage Suppliers">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="21.0" right="-9.0" top="2.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="212.0">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="175.0" text="Assign Inventory">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="21.0" right="-9.0" top="2.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="212.0">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="175.0" text="Manage Items">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="21.0" right="-9.0" top="2.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="212.0">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="175.0" text="Direct prchase">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="21.0" right="-9.0" top="2.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="212.0">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="175.0" text="Hire purchase">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="21.0" right="-9.0" top="2.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="212.0">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="175.0" text="Manage Stock">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="21.0" right="-9.0" top="2.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="212.0">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="175.0" text="Report">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="21.0" right="-9.0" top="2.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="212.0">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="175.0" text="Manage repairs">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="21.0" right="-9.0" top="2.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="212.0">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="175.0" text="Send Inventory">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="21.0" right="-9.0" top="2.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="212.0">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="175.0" text="Send Repair status">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="21.0" right="-9.0" top="2.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="274.0" prefWidth="228.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="236.0" style="-fx-background-color: black;" text="LOG OUT" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="-13.0" left="-18.0" right="-17.0" top="229.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children></VBox>
+         </children>
+      </VBox>
+      <HBox layoutX="226.0" prefHeight="80.0" prefWidth="1311.0" style="-fx-background-color: white;">
+         <children>
+            <Separator orientation="VERTICAL" prefHeight="66.0" prefWidth="19.0">
+               <HBox.margin>
+                  <Insets top="4.0" />
+               </HBox.margin>
+            </Separator>
+            <HBox prefHeight="43.0" prefWidth="326.0">
+               <children>
+                  <HBox prefHeight="27.0" prefWidth="361.0" style="-fx-border-radius: 30px;" styleClass="search" stylesheets="@../assets/css/style.css">
+                     <HBox.margin>
+                        <Insets left="9.0" top="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <HBox prefHeight="35.0" prefWidth="266.0">
+                           <children>
+                              <TextField alignment="TOP_LEFT" focusTraversable="false" prefHeight="25.0" prefWidth="254.0" promptText="search" style="-fx-background-color: white;" stylesheets="@../assets/css/style.css">
+                                 <HBox.margin>
+                                    <Insets left="11.0" top="14.0" />
+                                 </HBox.margin></TextField>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="-8.0" />
+                           </HBox.margin>
+                        </HBox>
+                        <HBox prefHeight="51.0" prefWidth="52.0">
+                           <children>
+                              <ImageView fitHeight="17.0" fitWidth="20.0">
+                                 <image>
+                                    <Image url="@../assets/system_image/search-50.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="17.0" top="19.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets top="-12.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="19.0" left="27.0" top="20.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets top="-1.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="80.0" prefWidth="336.0" />
+            <HBox prefHeight="80.0" prefWidth="597.0">
+               <children>
+                  <Label text="ADMIN : DILSHAN SHIVANTHA">
+                     <HBox.margin>
+                        <Insets left="274.0" right="19.0" top="35.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="52.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/system_image/Admin.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="16.0" top="15.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children></HBox>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="286.0" layoutY="101.0" prefHeight="108.0" prefWidth="123.0" style="-fx-background-color: green; -fx-background-radius: 10px;" text="Add customer" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="426.0" layoutY="101.0" prefHeight="108.0" prefWidth="123.0" style="-fx-background-color: yellow;" text="Add customer" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="574.0" layoutY="101.0" prefHeight="108.0" prefWidth="123.0" style="-fx-background-color: red;" text="Add customer" />
+   </children>
+</AnchorPane>

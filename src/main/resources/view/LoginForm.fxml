@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="509.0" prefWidth="476.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ijse.gdse.controller.LoginFormController">
+   <children>
+      <Pane prefHeight="36.0" prefWidth="480.0" style="-fx-background-color: black;">
+         <children>
+            <Text fill="WHITE" layoutX="101.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MY PLUS COMPUTERS SYSTEM LOG IN FORM" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="closeBtn" fitHeight="22.0" fitWidth="23.0" layoutX="452.0" layoutY="7.0" onMouseClicked="#closeBtnMouseClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/system_image/close.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+      <TextField layoutX="93.0" layoutY="278.0" prefHeight="25.0" prefWidth="293.0" styleClass="log-ext-field" stylesheets="@../assets/css/style.css" />
+      <PasswordField layoutX="93.0" layoutY="344.0" prefHeight="27.0" prefWidth="293.0" styleClass="log-ext-field" stylesheets="@../assets/css/style.css" />
+      <Button alignment="CENTER" graphicTextGap="10.0" layoutX="166.0" layoutY="415.0" mnemonicParsing="false" onAction="#loginBtnOnAction" prefHeight="36.0" prefWidth="151.0" styleClass="login-button" stylesheets="@../assets/css/style.css" text="Log in">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text layoutX="93.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="user name" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="93.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="password" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="241.0" fitWidth="248.0" layoutX="116.0" layoutY="24.0">
+         <image>
+            <Image url="@../assets/system_image/company_logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
