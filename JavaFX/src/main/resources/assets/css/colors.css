@@ -1,0 +1,61 @@
+.root {
+    -brown         : #795548;
+    -red           : -danger;
+    -grapefruit    : #ED5565;
+    -grapefruit-2  : #DA4453;
+    -bittersweet   : #FC6E51;
+    -bittersweet-2 : #F6BB42;
+    -deep-orange   : #FF7043;
+    -orange        : -warning;
+    -amber         : #FFA000;
+    -sunflower     : #FFCE54;
+    -yellow        : #ffeb3b;
+    -lime          : #cddc39;
+    -grass         : #A0D468;
+    -grass-2       : #8CC152;
+    -green         : -success;
+    -mint          : #48CFAD;
+    -mint-2        : #37BC98;
+    -teal          : -info;
+    -cyan          : #00BCD4;
+    -aqua          : #4FC1E9;
+    -aqua-2        : #3BAFDA;
+    -blue-jeans    : #5D9CEC;
+    -blue-jeans-2  : #4A89DC;
+    -blue          : -primary;
+    -indigo        : #3F51B5;
+    -purple        : #AA66CC;
+    -deep-purple   : #512DA8;
+    -lavander      : #AC92EC;
+    -lavander-2    : #967ADC;
+    -pink          : #EC407A;
+    -pink-rose     : #EC87C0;
+    -pink-rose-2   : #D770AD;
+    -light-gray    : #F5F7FA;
+    -light-gray-2  : #E6E9ED;
+    -medium-gray   : #CCD1D9;
+    -medium-gray-2 : #AAB2BD;
+    -dark-gray     : #656D78;
+    -dark-gray-2   : #434A54;
+    -blue-gray     : #78909C;
+    -light-green   : #8BC34A;
+    -light-blue    : #82B1FF;
+    -gray          : #8e8e8e;
+
+    CHART_COLOR_1: -info;
+    CHART_COLOR_2: -mint;
+    CHART_COLOR_3: -amber;
+    CHART_COLOR_4: -grapefruit;
+    CHART_COLOR_5: -teal;
+
+    CHART_COLOR_1_TRANS_20: derive(-info, 20%);
+    CHART_COLOR_2_TRANS_20: derive(-mint, 20%);
+    CHART_COLOR_3_TRANS_20: derive(-amber, 20%);
+    CHART_COLOR_4_TRANS_20: derive(-grapefruit, 20%);
+    /* 70% opacity */
+    CHART_COLOR_1_TRANS_70: derive(-info, 70%);
+    CHART_COLOR_2_TRANS_70: derive(-mint, 70%);
+    CHART_COLOR_3_TRANS_70: derive(-amber, 70%);
+    CHART_COLOR_4_TRANS_70: derive(-grapefruit, 70%);
+
+}

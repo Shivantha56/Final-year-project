@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="698.0" prefWidth="1041.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.controllers.ItemViewController">
+   <children>
+      <Pane fx:id="itemContext" layoutX="3.0" layoutY="16.0" onMousePressed="#ItemContextOnAction" prefHeight="698.0" prefWidth="1041.0">
+         <children>
+            <TextField fx:id="itemNameText" layoutX="68.0" layoutY="86.0" prefHeight="33.0" prefWidth="244.0" promptText="Dilshan shiavntha" />
+            <TextField fx:id="itemPriceText" layoutX="386.0" layoutY="85.0" prefHeight="33.0" prefWidth="244.0" promptText="2500.00" />
+            <TextField fx:id="itemWarrantyPeriod" layoutX="71.0" layoutY="268.0" prefHeight="33.0" prefWidth="244.0" promptText=" 3 years" />
+            <TextField fx:id="itemQuantityText" layoutX="68.0" layoutY="174.0" prefHeight="33.0" prefWidth="244.0" promptText="25" />
+            <Label layoutX="73.0" layoutY="64.0" text="Item name" />
+            <Label layoutX="391.0" layoutY="64.0" text="Item price" />
+            <Label layoutX="81.0" layoutY="248.0" text="Warranty period" />
+            <Label layoutX="75.0" layoutY="151.0" text="Item quantity" />
+            <Label layoutX="393.0" layoutY="150.0" text="Itme Brand" />
+            <TableView fx:id="itemTable" layoutX="65.0" layoutY="331.0" prefHeight="339.0" prefWidth="916.0">
+               <columns>
+                  <TableColumn fx:id="itemTableName" prefWidth="140.00003051757812" text="customer name" />
+                  <TableColumn fx:id="itemTablePrice" prefWidth="189.06666564941406" text="customer phone number" />
+                  <TableColumn fx:id="itemTableQty" prefWidth="174.93331909179688" text="Item name" />
+                  <TableColumn fx:id="itemTableBrand" prefWidth="158.66668701171875" text="Item brand" />
+                  <TableColumn fx:id="itemTableWarranty" prefWidth="138.933349609375" text="Item price" />
+                  <TableColumn fx:id="itemTableWarranty1" prefWidth="110.39990234375" text="Brand name" />
+               </columns>
+            </TableView>
+            <Button layoutX="795.0" layoutY="268.0" mnemonicParsing="false" onAction="#itemUpdateOnAction" prefWidth="80.0" text="update" />
+            <Button layoutX="896.0" layoutY="267.0" mnemonicParsing="false" onAction="#itemDeletOnAction" prefWidth="80.0" text="delete" />
+            <Button layoutX="675.0" layoutY="268.0" mnemonicParsing="false" onAction="#itemSaveOnActrion" prefWidth="100.0" text="save" />
+            <Pane fx:id="itemSearchContainer" layoutX="58.0" layoutY="4.0" prefHeight="44.0" prefWidth="271.0">
+               <children>
+                  <TextField fx:id="itemSearchTextField" layoutX="9.0" layoutY="10.0" onAction="#customerSearchOnAction" onKeyReleased="#customerSearchOnKeyPress" prefHeight="25.0" prefWidth="254.0" promptText="Item search" />
+                  <Pane fx:id="itemSearchPane" layoutY="43.0" prefWidth="271.0" style="-fx-background-color: red;" visible="false">
+                     <children>
+                        <ScrollPane hbarPolicy="NEVER" maxHeight="200.0" maxWidth="271.0" prefWidth="271.0" style="-fx-background-color: white;">
+                           <content>
+                              <VBox fx:id="itemSearchVBox" maxHeight="200.0" maxWidth="258.0" prefWidth="258.0" style="-fx-background-color: white;" />
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Separator layoutX="44.0" layoutY="54.0" prefHeight="2.0" prefWidth="934.0" />
+            <Button layoutX="380.0" layoutY="13.0" mnemonicParsing="false" onAction="#clearTexFieldOnAction" text="Clear field values" />
+            <ComboBox fx:id="itemBrandList" layoutX="384.0" layoutY="172.0" prefHeight="33.0" prefWidth="244.0" promptText="brand" />
+         </children>
+      </Pane>
+      <Pane fx:id="clearSearchFielContainer" layoutX="293.0" layoutY="32.0" onMouseClicked="#clearSearchFieldOnAction" prefHeight="22.0" prefWidth="29.0" visible="false">
+         <children>
+            <ImageView fitHeight="21.0" fitWidth="15.0" layoutX="5.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/icons8-close-40.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="868.0" layoutY="93.0" prefHeight="122.0" prefWidth="128.0" style="-fx-border-color: gray; -fx-border-width: 0.5px; -fx-border-style: fotted;">
+         <children>
+            <ImageView fx:id="itemImageContainer" fitHeight="115.0" fitWidth="115.0" layoutX="7.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <Pane layoutX="717.0" layoutY="93.0" prefHeight="122.0" prefWidth="128.0" style="-fx-border-color: gray; -fx-border-width: 0.5px; -fx-border-style: fotted;">
+         <children>
+            <ImageView fx:id="qrView" fitHeight="113.0" fitWidth="115.0" layoutX="7.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <Button layoutX="887.0" layoutY="231.0" mnemonicParsing="false" onAction="#uploadItemImage" text="upload image" />
+      <Button layoutX="727.0" layoutY="231.0" mnemonicParsing="false" onAction="#generateQrCodeOnAction" text="Generate qr code" />
+   </children>
+</AnchorPane>

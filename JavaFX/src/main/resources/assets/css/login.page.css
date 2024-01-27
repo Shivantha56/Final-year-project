@@ -1,0 +1,11 @@
+.login-btn:hover{
+    -fx-background-color: black;
+}
+.login-btn{
+    -fx-background-color:  #4d61fc;
+    -fx-background-radius: 5px;
+}
+
+.login-textfield{
+
+}

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.StackedAreaChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainContext" prefHeight="776.0" prefWidth="1300.0" style="-fx-background-color: white;" stylesheets="@../assets/css/dashboard.page.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.controllers.DashBoardController">
+   <children>
+      <Pane layoutX="1.0" layoutY="8.0" prefHeight="767.0" prefWidth="230.0" style="-fx-border-color: gray; -fx-border-width: 0.5px;" styleClass="nav-container" stylesheets="@../assets/css/dashboard.page.css">
+         <children>
+            <Separator layoutX="17.0" layoutY="82.0" prefHeight="14.0" prefWidth="200.0" />
+            <Pane layoutX="24.0" layoutY="15.0" prefHeight="56.0" prefWidth="51.0" styleClass="logo-container">
+               <stylesheets>
+                  <URL value="@../assets/css/dashboard.page.css" />
+                  <URL value="@../assets/css/colors.css" />
+               </stylesheets>
+               <children>
+                  <ImageView fitHeight="41.0" fitWidth="41.0" layoutX="6.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/logo/logo_128.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Label layoutX="91.0" layoutY="15.0" text="Inventory " textFill="#767676">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="93.0" layoutY="50.0" text="Glace .Inc" textFill="#767676">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <VBox layoutX="19.0" layoutY="111.0" prefHeight="619.0" prefWidth="192.0">
+               <children>
+                  <HBox accessibleText="dashboard" onMousePressed="#clickNavigationBtn" prefHeight="59.0" prefWidth="190.0" styleClass="hover-color" stylesheets="@../assets/css/dashboard.page.css">
+                     <children>
+                        <Rectangle arcHeight="5.0" fill="#32b4e5" height="58.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="3.0" />
+                        <SVGPath content="M19 5v2h-4V5h4M9 5v6H5V5h4m10 8v6h-4v-6h4M9 17v2H5v-2h4M21 3h-8v6h8V3zM11 3H3v10h8V3zm10 8h-8v10h8V11zm-10 4H3v6h8v-6z" fill="#32b4e5">
+                           <HBox.margin>
+                              <Insets left="20.0" right="26.0" top="17.0" />
+                           </HBox.margin>
+                        </SVGPath>
+                        <Label alignment="CENTER" layoutX="36.0" layoutY="12.0" styleClass="nav-container" stylesheets="@../assets/css/dashboard.page.css" text="Dashboard" textFill="#32b4e5">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets top="13.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets top="2.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox accessibleText="customer" layoutX="10.0" layoutY="128.0" onMousePressed="#clickNavigationBtn" prefHeight="59.0" prefWidth="190.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" fill="WHITE" height="58.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="3.0" />
+                        <SVGPath content="M19 5v2h-4V5h4M9 5v6H5V5h4m10 8v6h-4v-6h4M9 17v2H5v-2h4M21 3h-8v6h8V3zM11 3H3v10h8V3zm10 8h-8v10h8V11zm-10 4H3v6h8v-6z">
+                           <HBox.margin>
+                              <Insets left="20.0" right="26.0" top="17.0" />
+                           </HBox.margin>
+                        </SVGPath>
+                        <Label alignment="CENTER" layoutX="36.0" layoutY="12.0" onMousePressed="#clickNavigationBtn" styleClass="nav-container" stylesheets="@../assets/css/dashboard.page.css" text="Customer">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets top="13.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets top="2.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox accessibleText="item" layoutX="10.0" layoutY="69.0" onMousePressed="#clickNavigationBtn" prefHeight="59.0" prefWidth="190.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" fill="WHITE" height="58.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="3.0" />
+                        <SVGPath content="M19 5v2h-4V5h4M9 5v6H5V5h4m10 8v6h-4v-6h4M9 17v2H5v-2h4M21 3h-8v6h8V3zM11 3H3v10h8V3zm10 8h-8v10h8V11zm-10 4H3v6h8v-6z">
+                           <HBox.margin>
+                              <Insets left="20.0" right="26.0" top="17.0" />
+                           </HBox.margin>
+                        </SVGPath>
+                        <Label alignment="CENTER" layoutX="36.0" layoutY="12.0" styleClass="nav-container" stylesheets="@../assets/css/dashboard.page.css" text="Items">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets top="13.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets top="2.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox accessibleText="orderDetails" layoutX="10.0" layoutY="128.0" onMousePressed="#clickNavigationBtn" prefHeight="59.0" prefWidth="190.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" fill="WHITE" height="58.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="3.0" />
+                        <SVGPath content="M19 5v2h-4V5h4M9 5v6H5V5h4m10 8v6h-4v-6h4M9 17v2H5v-2h4M21 3h-8v6h8V3zM11 3H3v10h8V3zm10 8h-8v10h8V11zm-10 4H3v6h8v-6z">
+                           <HBox.margin>
+                              <Insets left="20.0" right="26.0" top="17.0" />
+                           </HBox.margin>
+                        </SVGPath>
+                        <Label alignment="CENTER" layoutX="36.0" layoutY="12.0" styleClass="nav-container" stylesheets="@../assets/css/dashboard.page.css" text="Order Details">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets top="13.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets top="2.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox accessibleText="newOrder" layoutX="10.0" layoutY="188.0" onMousePressed="#clickNavigationBtn" prefHeight="59.0" prefWidth="190.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" fill="WHITE" height="58.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="3.0" />
+                        <SVGPath content="M19 5v2h-4V5h4M9 5v6H5V5h4m10 8v6h-4v-6h4M9 17v2H5v-2h4M21 3h-8v6h8V3zM11 3H3v10h8V3zm10 8h-8v10h8V11zm-10 4H3v6h8v-6z">
+                           <HBox.margin>
+                              <Insets left="20.0" right="26.0" top="17.0" />
+                           </HBox.margin>
+                        </SVGPath>
+                        <Label alignment="CENTER" layoutX="36.0" layoutY="12.0" styleClass="nav-container" stylesheets="@../assets/css/dashboard.page.css" text="New Order">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets top="13.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets top="2.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Pane layoutX="231.0" layoutY="8.0" prefHeight="44.0" prefWidth="1063.0" style="-fx-border-color: gray; -fx-border-width: 0.5px;">
+         <children>
+            <Label fx:id="pageNameLbl" layoutX="33.0" layoutY="9.0" styleClass="set-font" stylesheets="@../assets/css/dashboard.page.css" text="DashBoard" />
+            <Button fx:id="customerSearchBtn" layoutX="569.0" layoutY="9.0" mnemonicParsing="false" onAction="#customerSearchBtnOnAction" text="search" />
+            <Pane fx:id="customerSearchContainer" layoutX="279.0" layoutY="-1.0" prefHeight="44.0" prefWidth="271.0" visible="false">
+               <children>
+                  <TextField fx:id="customerSearchTextField" layoutX="9.0" layoutY="10.0" onAction="#customerSearchOnAction" onKeyPressed="#customerSearchOnKeyPress" prefHeight="25.0" prefWidth="254.0" promptText="customer search" />
+                  <Pane fx:id="customerSearchPane" layoutY="43.0" prefWidth="271.0" style="-fx-background-color: red;" visible="false">
+                     <children>
+                        <ScrollPane hbarPolicy="NEVER" maxHeight="200.0" maxWidth="271.0" prefWidth="271.0" style="-fx-background-color: white;">
+                           <content>
+                              <VBox fx:id="customerSearchVbox" maxHeight="200.0" maxWidth="258.0" prefWidth="258.0" style="-fx-background-color: white;" />
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="dashBoardContext" layoutX="254.0" layoutY="56.0" prefHeight="716.0" prefWidth="1041.0" visible="false">
+         <children>
+            <HBox layoutX="25.0" layoutY="9.0" prefHeight="100.0" prefWidth="326.0" style="-fx-border-color: gray; -fx-border-width: 0.5px;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" style="-fx-background-color: #e11c1c; -fx-padding: 20; -fx-background-radius: 10;" text="Label" textFill="#e11c1c">
+                     <graphic>
+                        <SVGPath content="M10 23.375h13.125v-2.792H10Zm0-5.292h20v-2.791H10Zm0-5.291h20v-2.75H10ZM3.333 36.667V6.125q0-1.125.834-1.958.833-.834 1.958-.834h27.75q1.125 0 1.958.834.834.833.834 1.958v21.083q0 1.125-.834 1.959Q35 30 33.875 30H10Zm2.792-6.709 2.708-2.75h25.042V6.125H6.125Zm0-23.833v23.833Z" style="-fx-fill: white;" />
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="24.0" top="9.0" />
+                     </HBox.margin>
+                  </Label>
+                  <VBox prefHeight="95.0" prefWidth="254.0">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="166.0" text="25" textFill="#e11c1c">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="6.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="162.0" text="Total Customers" textFill="#e11c1c">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="-5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="57.0" right="-1.0" top="17.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox layoutX="364.0" layoutY="8.0" prefHeight="100.0" prefWidth="307.0" style="-fx-border-color: gray; -fx-border-width: 0.5px;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" style="-fx-background-color: #0ad6ff; -fx-padding: 20; -fx-background-radius: 10;" text="Label" textFill="#0ad6ff">
+                     <graphic>
+                        <SVGPath content="M10 23.375h13.125v-2.792H10Zm0-5.292h20v-2.791H10Zm0-5.291h20v-2.75H10ZM3.333 36.667V6.125q0-1.125.834-1.958.833-.834 1.958-.834h27.75q1.125 0 1.958.834.834.833.834 1.958v21.083q0 1.125-.834 1.959Q35 30 33.875 30H10Zm2.792-6.709 2.708-2.75h25.042V6.125H6.125Zm0-23.833v23.833Z" style="-fx-fill: white;" />
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="25.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <VBox prefHeight="98.0" prefWidth="244.0">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="11.0" prefWidth="243.0" text="25" textFill="#0ad6ff">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="18.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" prefHeight="15.0" prefWidth="244.0" text="Total Orders" textFill="#0ad6ff">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="-40.0" top="13.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox layoutX="684.0" layoutY="7.0" prefHeight="100.0" prefWidth="338.0" style="-fx-border-color: gray; -fx-border-width: 0.5px;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" style="-fx-background-color: #ffea00; -fx-padding: 20; -fx-background-radius: 10;" text="Label" textFill="#ffea00">
+                     <graphic>
+                        <SVGPath content="M10 23.375h13.125v-2.792H10Zm0-5.292h20v-2.791H10Zm0-5.291h20v-2.75H10ZM3.333 36.667V6.125q0-1.125.834-1.958.833-.834 1.958-.834h27.75q1.125 0 1.958.834.834.833.834 1.958v21.083q0 1.125-.834 1.959Q35 30 33.875 30H10Zm2.792-6.709 2.708-2.75h25.042V6.125H6.125Zm0-23.833v23.833Z" style="-fx-fill: white;" />
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="16.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <VBox prefHeight="98.0" prefWidth="263.0">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="2.0" prefWidth="262.0" text="25" textFill="#ffea00">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets top="19.0" />
+                           </padding>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" prefHeight="5.0" prefWidth="262.0" text="Todays Orders" textFill="#ffea00">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="-32.0" top="14.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+            <StackedAreaChart layoutX="-14.0" layoutY="129.0" prefHeight="230.0" prefWidth="1047.0">
+              <xAxis>
+                <NumberAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </StackedAreaChart>
+            <BarChart layoutX="-11.0" layoutY="354.0" prefHeight="335.0" prefWidth="438.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <TableView layoutX="451.0" layoutY="372.0" prefHeight="289.0" prefWidth="562.0">
+              <columns>
+                <TableColumn prefWidth="192.0" text="customer Name" />
+                <TableColumn prefWidth="210.39996337890625" text="Customer NIC" />
+                  <TableColumn prefWidth="161.0665283203125" text="Customer PNO" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Pane fx:id="customerContext" layoutX="241.0" layoutY="64.0" prefHeight="701.0" prefWidth="1052.0" visible="false">
+         <children>
+            <TextField fx:id="customerNameText" layoutX="68.0" layoutY="65.0" prefHeight="33.0" prefWidth="244.0" />
+            <TextField fx:id="customerEmailTextField" layoutX="386.0" layoutY="64.0" prefHeight="33.0" prefWidth="244.0" />
+            <TextField fx:id="customerAddressTextField" layoutX="71.0" layoutY="247.0" prefHeight="33.0" prefWidth="244.0" />
+            <TextField fx:id="customerAgeTextField" layoutX="68.0" layoutY="153.0" prefHeight="33.0" prefWidth="244.0" />
+            <TextField fx:id="customerNicTextField" layoutX="386.0" layoutY="152.0" prefHeight="33.0" prefWidth="244.0" />
+            <TextField fx:id="customerPhoneNumberTextField" layoutX="386.0" layoutY="245.0" prefHeight="33.0" prefWidth="244.0" />
+            <Label layoutX="73.0" layoutY="43.0" text="Name" />
+            <Label layoutX="391.0" layoutY="43.0" text="Enter email" />
+            <Label layoutX="81.0" layoutY="227.0" text="Enter Address" />
+            <Label layoutX="75.0" layoutY="130.0" text="Enter age" />
+            <Label layoutX="393.0" layoutY="129.0" text="Enter nic" />
+            <Label layoutX="391.0" layoutY="223.0" text="Enter Phone number" />
+            <TableView layoutX="65.0" layoutY="331.0" prefHeight="339.0" prefWidth="916.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Name" />
+                <TableColumn prefWidth="243.73333740234375" text="Email" />
+                  <TableColumn prefWidth="113.06668090820312" text="Age" />
+                  <TableColumn prefWidth="188.5333251953125" text="Address" />
+                  <TableColumn prefWidth="174.66668701171875" text="Phone number" />
+                  <TableColumn prefWidth="121.8665771484375" text="Nic" />
+              </columns>
+            </TableView>
+            <Button layoutX="795.0" layoutY="250.0" mnemonicParsing="false" onAction="#customerUpdateBtn" prefWidth="80.0" text="update" />
+            <Button layoutX="896.0" layoutY="249.0" mnemonicParsing="false" onAction="#customerDeleteBtn" prefWidth="80.0" text="delete" />
+            <Button layoutX="675.0" layoutY="250.0" mnemonicParsing="false" onAction="#customerSaveBtn" prefWidth="100.0" text="save" />
+            <Pane layoutX="758.0" layoutY="51.0" prefHeight="122.0" prefWidth="128.0" style="-fx-border-color: gray; -fx-border-width: 0.5px; -fx-border-style: fotted;" />
+            <Button layoutX="776.0" layoutY="188.0" mnemonicParsing="false" onAction="#customerImageUploadBtn" text="upload image" />
+         </children></Pane>
+      <Pane fx:id="contextSetterPane" layoutX="245.0" layoutY="67.0" prefHeight="698.0" prefWidth="1041.0" />
+   </children>
+</AnchorPane>

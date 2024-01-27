@@ -1,0 +1,42 @@
+CREATE DATABASE IF NOT EXISTS java_fx_application;
+USE java_fx_application;
+
+CREATE TABLE customer (
+    customer_id INTEGER PRIMARY KEY AUTO_INCREMENT,
+  customer_name VARCHAR(255),
+  customer_address VARCHAR(255),
+  customer_age INTEGER (3),
+  customer_email VARCHAR(50),
+  customer_nic INTEGER(20),
+  customer_phoneNumber VARCHAR(20),
+  customer_image BLOB (50000000)
+);
+
+CREATE TABLE item (
+    item_id INTEGER PRIMARY KEY AUTO_INCREMENT,
+  item_name VARCHAR(255) unique ,
+  item_price DOUBLE,
+  item_qty INTEGER (3),
+  itemBrand VARCHAR(50),
+  warranty_period INTEGER(20),
+  item_image BLOB(50000000),
+  item_qr BLOB (50000000)
+);
+
+CREATE TABLE `order`(
+    order_id VARCHAR(30) primary key ,
+    customer_id INTEGER,
+    order_date TIMESTAMP default current_timestamp,
+    total_price DOUBLE,
+    FOREIGN KEY (customer_id) REFERENCES customer(customer_id)
+);
+
+CREATE TABLE `order_details`(
+    order_details INTEGER primary key ,
+    order_id VARCHAR(30),
+    item_id INTEGER,
+    item_name VARCHAR(255),
+    item_qty INTEGER,
+    FOREIGN KEY (order_id) REFERENCES `order`(order_id),
+    FOREIGN KEY (item_id) REFERENCES `item`(item_id)
+);
